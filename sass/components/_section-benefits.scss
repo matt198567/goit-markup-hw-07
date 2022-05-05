@@ -1,0 +1,56 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    display: flex;
+}
+
+.activity {
+    padding-top: 0;
+}
+
+.team {
+    background-color: #f5f4fa;
+}
+
+.text {
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+}
+
+.title {
+    letter-spacing: 0.03em;
+    color: var(--complementary-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+
+    max-width: 270px;
+    margin-top: 10px;
+}
+
+.description:not(:first-child) {
+    margin-left: 30px;
+}
+
+.description-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.icon-description {
+    width: 70px;
+    height: 70px;
+}

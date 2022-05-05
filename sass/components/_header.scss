@@ -1,0 +1,129 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.сompany-logo {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.сompany-logo--blak {
+    color: var(--title-text-color);
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.list {
+    list-style: none;
+
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+}
+
+.sait-nav__li:not(:first-child) {
+    margin-left: 50px;
+}
+
+.list__work-mail:hover,
+.list__work-mail:focus {
+    color: var(--accent-color);
+}
+
+.list__work-mail {
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    align-items: center;
+
+    transition: color 250ms var(--animation-time);
+}
+
+.list__work-mail-li:not(:first-child) {
+    margin-left: 50px;
+}
+
+.list__icon-mail-smartphone {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/* Main-nav-contact */
+
+.main-nav-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+/* site nav */
+
+.sait-nav .link-nav {
+    color: var(--title-text-color);
+    transition: color 250ms var(--animation-time);
+}
+
+.sait-nav .link-nav:hover,
+.sait-nav .link-nav:focus {
+    color: var(--accent-color);
+}
+
+.sait-nav {
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+
+    margin-left: 93px;
+    display: flex;
+}
+
+.sait-nav .link-nav.current {
+    color: var(--accent-color);
+    position: relative;
+}
+
+.link-nav.current::after {
+    content: '';
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 0;
+}
+
+.link-nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+.link-nav .link {
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+
+    display: inline-block;
+}
+
+.list__work-mail {
+    color: var(--complementary-text);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+}
