@@ -33,11 +33,6 @@
     margin-left: 50px;
 }
 
-.list__work-mail:hover,
-.list__work-mail:focus {
-    color: var(--accent-color);
-}
-
 .list__work-mail {
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -46,6 +41,10 @@
     align-items: center;
 
     transition: color 250ms var(--animation-time);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .list__work-mail-li:not(:first-child) {
@@ -69,18 +68,6 @@ nav {
     display: flex;
 }
 
-/* site nav */
-
-.sait-nav .link-nav {
-    color: var(--title-text-color);
-    transition: color 250ms var(--animation-time);
-}
-
-.sait-nav .link-nav:hover,
-.sait-nav .link-nav:focus {
-    color: var(--accent-color);
-}
-
 .sait-nav {
     letter-spacing: 0.02em;
     font-weight: 500;
@@ -89,6 +76,20 @@ nav {
 
     margin-left: 93px;
     display: flex;
+    .link-nav {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            display: block;
+            letter-spacing: 0.03em;
+            display: inline-block;
+            color: var(--title-text-color);
+            
+            transition: color 250ms var(--animation-time);
+            &:hover,
+            &:focus {
+            color: var(--accent-color);
+                    }
+        }
 }
 
 .sait-nav .link-nav.current {
@@ -105,19 +106,6 @@ nav {
     background-color: var(--accent-color);
     position: absolute;
     left: 0;
-}
-
-.link-nav {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-}
-
-.link-nav .link {
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-
-    display: inline-block;
 }
 
 .list__work-mail {

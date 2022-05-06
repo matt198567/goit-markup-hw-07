@@ -20,18 +20,17 @@
     cursor: pointer;
     color: #AFB1B8;
     transition: border-color 250ms var(--animation-time), color 250ms var(--animation-time);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
 }
 
 .section-clients-list {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.section-clients-logo:hover,
-.section-clients-logo:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
 }
 
 .client-item:not(:last-child) {

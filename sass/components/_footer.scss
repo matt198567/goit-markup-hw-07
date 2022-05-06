@@ -32,19 +32,17 @@
 .contact {
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--animation-time);
-}
-
-.contact:hover {
-    color: var(--accent-color);
+    &:hover {
+            color: var(--accent-color);
+        }
 }
 
 .contacts {
     color: var(--complementary-color);
     transition: color 250ms var(--animation-time);
-}
-
-.contacts:hover {
-    color: var(--accent-color);
+    &:hover {
+            color: var(--accent-color);
+        }
 }
 
 .container-footer {
@@ -86,11 +84,10 @@
     justify-content: center;
 
     transition: background-color 250ms var(--animation-time);
-}
-
-.footer-network-link:hover,
-.footer-network-link:focus {
-    background-color: var(--accent-color);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .footer-social-network {
