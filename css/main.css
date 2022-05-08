@@ -3,19 +3,26 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header__link {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.сompany-logo {
+nav {
+  display: flex;
+}
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--accent-color);
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.2;
 }
 
-.сompany-logo--blak {
+.logo__blak {
   color: var(--title-text-color);
   font-family: Raleway;
   font-size: 26px;
@@ -29,41 +36,8 @@
   display: flex;
 }
 
-.sait-nav__li:not(:first-child) {
+.sait-nav__item:not(:first-child) {
   margin-left: 50px;
-}
-
-.list__work-mail {
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  align-items: center;
-  transition: color 250ms var(--animation-time);
-}
-
-.list__work-mail:hover, .list__work-mail:focus {
-  color: var(--accent-color);
-}
-
-.list__work-mail-li:not(:first-child) {
-  margin-left: 50px;
-}
-
-.list__icon-mail-smartphone {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-/* Main-nav-contact */
-.main-nav-contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav {
-  display: flex;
 }
 
 .sait-nav {
@@ -75,7 +49,7 @@ nav {
   display: flex;
 }
 
-.sait-nav .link-nav {
+.sait-nav .sait-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -85,16 +59,16 @@ nav {
   transition: color 250ms var(--animation-time);
 }
 
-.sait-nav .link-nav:hover, .sait-nav .link-nav:focus {
+.sait-nav .sait-nav__link:hover, .sait-nav .sait-nav__link:focus {
   color: var(--accent-color);
 }
 
-.sait-nav .link-nav.current {
+.sait-nav .sait-nav__link.sait-nav__link--current {
   color: var(--accent-color);
   position: relative;
 }
 
-.link-nav.current::after {
+.sait-nav__link.sait-nav__link--current::after {
   content: '';
   bottom: -1px;
   width: 100%;
@@ -105,11 +79,30 @@ nav {
   left: 0;
 }
 
-.list__work-mail {
+.contacts__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contacts__link {
   color: var(--complementary-text);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
+  transition: color 250ms var(--animation-time);
+}
+
+.contacts__link:hover, .contacts__link:focus {
+  color: var(--accent-color);
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 html {
@@ -149,6 +142,7 @@ p {
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -186,7 +180,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.button__clik {
+.hero__button {
   letter-spacing: 0.06em;
   color: var(--complementary-color);
   background-color: var(--accent-color);
@@ -196,6 +190,7 @@ ul {
   line-height: 1.9;
   border: transparent;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   min-width: 200px;
   min-height: 50px;
@@ -466,12 +461,12 @@ img {
   color: var(--accent-color);
 }
 
-.contacts {
+.footer-address {
   color: var(--complementary-color);
   transition: color 250ms var(--animation-time);
 }
 
-.contacts:hover {
+.footer-address:hover {
   color: var(--accent-color);
 }
 
@@ -579,10 +574,6 @@ img {
 }
 
 /* Стили для portfolio.html */
-ul {
-  list-style: none;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -639,11 +630,6 @@ ul {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-link:hover .card-dropdown-text,
-.card-link:focus .card-dropdown-text {
-  transform: translateY(0);
-}
-
 .thumb {
   position: relative;
   overflow: hidden;
@@ -664,6 +650,11 @@ ul {
   transform-origin: bottom;
   top: 0;
   left: 0;
+}
+
+.card-link:hover .card-dropdown-text,
+.card-link:focus .card-dropdown-text {
+  transform: translateY(0);
 }
 
 .images-portfolio {
@@ -907,9 +898,5 @@ ul {
 .btn-modal {
   margin-top: 30px;
   text-align: center;
-}
-
-.button-clik {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*# sourceMappingURL=main.css.map */

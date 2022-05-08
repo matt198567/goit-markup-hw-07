@@ -10,11 +10,6 @@
     }
 }
 
-.card-link:hover .card-dropdown-text,
-.card-link:focus .card-dropdown-text {
-    transform: translateY(0);
-}
-
 .thumb {
     position: relative;
     overflow: hidden;
@@ -33,11 +28,15 @@
     height: 100%;
 
     transition: transform 250ms var(--animation-time),
-        opacity 250ms var(--animation-time);
+    opacity 250ms var(--animation-time);
     transform: translateY(100%);
     transform-origin: bottom;
     top: 0;
     left: 0;
+    .card-link:hover &,
+    .card-link:focus & {
+        transform: translateY(0);
+    }
 }
 
 .images-portfolio {
